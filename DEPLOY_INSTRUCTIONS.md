@@ -1,8 +1,29 @@
 # 🚀 WhiteLabelEcommerce - Instruções de Deploy
 
+## ⚠️ **IMPORTANTE - LEIA PRIMEIRO**
+
+### **🔄 ESTES SCRIPTS SUBSTITUEM COMPLETAMENTE OS ANTIGOS!**
+
+**❌ Scripts Antigos (IGNORAR):**
+- `001_initial_schema.sql` 
+- `002_security_policies.sql`
+- `003_seed_data.sql`
+- `001_initial_schema_numeric.sql`
+
+**✅ Scripts Novos (USAR APENAS ESTES):**
+- `001_create_schema.sql`
+- `002_create_commerce_tables.sql` 
+- `003_create_additional_tables.sql`
+- `004_security_policies.sql`
+- `005_seed_data.sql`
+
 ## 📋 **Ordem de Execução dos Scripts SQL**
 
+### **🆕 Para Banco NOVO (primeira vez):**
 Execute os scripts na seguinte ordem no **Supabase SQL Editor**:
+
+### **🔄 Para Banco que JÁ TEM tabelas antigas:**
+Os novos scripts já fazem a limpeza automática (DROP TABLE), então execute normalmente na ordem abaixo.
 
 ### 1️⃣ **Schema Principal**
 ```sql
