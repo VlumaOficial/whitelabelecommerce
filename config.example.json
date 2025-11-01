@@ -1,0 +1,209 @@
+{
+  "tenant": {
+    "id": "example-tenant-001",
+    "name": "Pet Store Exemplo",
+    "domain": "petstore.exemplo.com",
+    "status": "active"
+  },
+  "branding": {
+    "logo": {
+      "url": "/logos/petstore-logo.png",
+      "alt": "Pet Store Exemplo",
+      "width": 120,
+      "height": 40
+    },
+    "colors": {
+      "primary": "#10b981",
+      "secondary": "#3b82f6", 
+      "accent": "#f59e0b",
+      "success": "#22c55e",
+      "warning": "#f59e0b",
+      "error": "#ef4444",
+      "background": "#ffffff",
+      "foreground": "#1f2937"
+    },
+    "typography": {
+      "fontFamily": "Inter, system-ui, sans-serif",
+      "headingFont": "Inter, system-ui, sans-serif",
+      "fontSize": {
+        "xs": "0.75rem",
+        "sm": "0.875rem", 
+        "base": "1rem",
+        "lg": "1.125rem",
+        "xl": "1.25rem",
+        "2xl": "1.5rem",
+        "3xl": "1.875rem",
+        "4xl": "2.25rem"
+      }
+    }
+  },
+  "content": {
+    "hero": {
+      "title": "Tudo para seu Pet Feliz",
+      "subtitle": "em um só lugar",
+      "description": "Mais de 50.000 produtos selecionados, entrega em 1 hora e os melhores preços do Brasil.",
+      "ctaPrimary": "Ganhar 15% OFF Agora",
+      "ctaSecondary": "Ver Como Funciona",
+      "announcement": "🔥 BLACK FRIDAY: Até 70% OFF + Frete Grátis"
+    },
+    "features": [
+      {
+        "icon": "truck",
+        "title": "Entrega em 1 Hora", 
+        "description": "Receba seus produtos em tempo recorde. Cobrimos 95% da região metropolitana com nossa logística expressa.",
+        "badge": "Disponível 24/7"
+      },
+      {
+        "icon": "shield",
+        "title": "100% Seguro",
+        "description": "Criptografia de nível bancário, certificação SSL e total conformidade com a LGPD. Seus dados estão protegidos.",
+        "badge": "Certificado SSL"
+      },
+      {
+        "icon": "credit-card", 
+        "title": "Parcele sem Juros",
+        "description": "Até 12x sem juros no cartão ou 5% de desconto no PIX. Flexibilidade total para suas compras.",
+        "badge": "5% OFF no PIX"
+      }
+    ],
+    "categories": [
+      {
+        "id": "pets",
+        "name": "Pets",
+        "description": "Tudo para seu melhor amigo",
+        "icon": "🐕",
+        "badge": "+15.000 produtos",
+        "gradient": "from-orange-400 via-red-400 to-pink-500"
+      },
+      {
+        "id": "casa", 
+        "name": "Casa",
+        "description": "Decoração e utilidades",
+        "icon": "🏠",
+        "badge": "Até 50% OFF",
+        "gradient": "from-blue-400 via-indigo-400 to-purple-500"
+      },
+      {
+        "id": "jardim",
+        "name": "Jardim", 
+        "description": "Plantas e jardinagem",
+        "icon": "🌱",
+        "badge": "Frete Grátis",
+        "gradient": "from-green-400 via-emerald-400 to-teal-500"
+      },
+      {
+        "id": "piscina",
+        "name": "Piscina",
+        "description": "Produtos aquáticos", 
+        "icon": "🏊",
+        "badge": "Verão 2024",
+        "gradient": "from-cyan-400 via-blue-400 to-indigo-500"
+      }
+    ]
+  },
+  "navigation": {
+    "header": {
+      "showSearch": true,
+      "showCart": true,
+      "showWishlist": true,
+      "showUserMenu": true,
+      "links": [
+        { "label": "Pets", "href": "/categoria/pets" },
+        { "label": "Casa", "href": "/categoria/casa" },
+        { "label": "Jardim", "href": "/categoria/jardim" },
+        { "label": "Piscina", "href": "/categoria/piscina" },
+        { "label": "Serviços", "href": "/servicos" },
+        { "label": "Ofertas", "href": "/ofertas", "highlight": true }
+      ]
+    },
+    "footer": {
+      "sections": [
+        {
+          "title": "Links Rápidos",
+          "links": [
+            { "label": "Sobre Nós", "href": "/sobre" },
+            { "label": "Como Comprar", "href": "/como-comprar" },
+            { "label": "Entrega e Frete", "href": "/entrega" },
+            { "label": "Trocas e Devoluções", "href": "/trocas-devolucoes" },
+            { "label": "Programa Fidelidade", "href": "/programa-fidelidade" }
+          ]
+        },
+        {
+          "title": "Categorias",
+          "links": [
+            { "label": "Pets", "href": "/categoria/pets" },
+            { "label": "Cachorros", "href": "/categoria/cachorros" },
+            { "label": "Gatos", "href": "/categoria/gatos" },
+            { "label": "Casa", "href": "/categoria/casa" },
+            { "label": "Jardim", "href": "/categoria/jardim" }
+          ]
+        }
+      ]
+    }
+  },
+  "contact": {
+    "phone": "(11) 3333-5555",
+    "email": "contato@petstore.exemplo.com",
+    "address": {
+      "street": "Rua das Flores, 123",
+      "city": "São Paulo",
+      "state": "SP", 
+      "zipCode": "01234-567"
+    },
+    "socialMedia": {
+      "facebook": "https://facebook.com/petstore",
+      "instagram": "https://instagram.com/petstore",
+      "twitter": "https://twitter.com/petstore",
+      "youtube": "https://youtube.com/petstore"
+    }
+  },
+  "features": {
+    "enableAuth": true,
+    "enableCart": true,
+    "enableWishlist": true,
+    "enableReviews": true,
+    "enableSubscriptions": true,
+    "enableMultiLanguage": false,
+    "enableDarkMode": true,
+    "enablePWA": true
+  },
+  "integrations": {
+    "payment": {
+      "stripe": {
+        "enabled": true,
+        "publicKey": "pk_test_..."
+      },
+      "pix": {
+        "enabled": true
+      },
+      "boleto": {
+        "enabled": true
+      }
+    },
+    "shipping": {
+      "correios": {
+        "enabled": true
+      },
+      "expressDelivery": {
+        "enabled": true,
+        "maxHours": 1
+      }
+    },
+    "analytics": {
+      "googleAnalytics": {
+        "enabled": true,
+        "trackingId": "GA_MEASUREMENT_ID"
+      },
+      "facebookPixel": {
+        "enabled": false
+      }
+    }
+  },
+  "seo": {
+    "title": "Pet Store Exemplo - Sua loja online completa",
+    "description": "Encontre os melhores produtos para pets, casa, jardim e muito mais. Entrega rápida, preços competitivos e atendimento especializado.",
+    "keywords": "pet store, produtos para pets, casa, jardim, loja online",
+    "ogImage": "/og-image.jpg",
+    "favicon": "/favicon.ico"
+  }
+}
